@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head><pre style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #3f3b3b">
+
+      </pre>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="img/logo.jpg" alt="CartExpress" width="200" height="150"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="contact.html">Research</a></li>
+				<li class="active"> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 580px; margin-top: 10px; position: absolute;">
+			<img src="img/contact.png"alt="Contact"  align="center">
+		</a></h1>
+<div class="form1">
+	<div class="form">
+	  <form name="ContactForm"onsubmit="contactForm()"class="form">
+	  <p style="font-family:verdana;">First name:<br>
+	  <input type="text" name="firstname">
+	  </p>
+	  <p style="font-family:verdana;">Last name:<br>
+	  <input type="text" name="lastname">
+	  </p>
+	  <p style="font-family:verdana;">Gender:<br>
+	  <input type="radio" name="gender" value="male"> Male
+	  <br>
+	  <input type="radio" name="gender" value="female"> Female
+	  <br>
+	  <input type="radio" name="gender" value="other"> Other
+	  </p>
+	  <p style="font-family:verdana;">Email:<br>
+	  <input type="text" name="email">
+	  </p>
+	  <p style="font-family:verdana;">Message:<br>
+	  <textarea name="message"></textarea>
+	  <p><input type="submit"value="SEND"class="box"></p>
+	</form>
+	<script>
+	function contactForm() {
+
+		var fname = document.forms["ContactForm"]["firstname"].value;
+		var lname = document.forms["ContactForm"]["lastname"].value;
+		var genders = document.forms["ContactForm"]["gender"].value;
+		var emails = document.forms["ContactForm"]["email"].value;
+		var messages = document.forms["ContactForm"]["message"].value;
+
+		if (fname == "" || lname == "" || genders == "" || emails == "" || messages == ""){
+			alert("Empty fields found. Please fill the form.");
+		}
+		else {
+			alert("Thank you for the feedback.");
+		}
+
+
+	}
+</script>
+</div>
+</div>
+	<div class="footer">
+			<p>@ 2020 The Gadget Hub. All Rights Reserved</p>
+		</div>
+	</body>
+</html>
+
+	

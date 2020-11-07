@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head><pre style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #3f3b3b">
+
+      </pre>
+	<title>iPad Pro</title>
+	<link rel="stylesheet" type="text/css" href="css/ipad.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="img/logo.jpg" alt="The Gadget Hub" width="200" height="150"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="ipad.html">Research</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 680px; margin-top: 5px; position: absolute;">
+			<img src="img/applogo.png" alt="iPhone" height="115" width="115" align="center"></h1>
+	<div class="ipad">
+		<div>
+		<img src="img/ipad2.png" class="images">
+	</div>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+	</script>
+</div>
+	<table id="t01">
+	  <tr>
+	    <th>Specifications</th>
+	    <th></th> 
+	  </tr>
+	  <tr>
+	    <td width="30%">Brand</td>
+	    <td>Apple</td>
+	  </tr>
+	  <tr>
+	    <td>Processor</td>
+	    <td>A12X Bionic Chip
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Display</td>
+	    <td>12.9" Oled Touchscreen</td>
+	  </tr>
+	  <tr>
+	    <td>Display PPI</td>
+	    <td>264 PPI
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Weight (g)	</td>
+	    <td>631</td>
+	  </tr>
+	  <tr>
+	    <td>Battery capacity (mAh)	</td>
+	    <td>9720</td>
+	  </tr>
+	</table>
+	<h1 style="text-align: center;margin-top: 10px;"><a href="contact.html">
+			<img src="img/buy.png" alt="Buy Now" height="150" width="150"></a></h1>
+<div class="footer">
+			<p>@ 2020 The Gadget Hub. All Rights Reserved</p>
+		</div>
+</body>
+</html>
+
+	

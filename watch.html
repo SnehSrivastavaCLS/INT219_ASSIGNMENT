@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head><pre style = "font-family: :Helvetica;font-size:20px;color: #ffffff; font-style:bold;background-color: #3f3b3b">
+
+      </pre>
+	<title>Apple Watch Series 5</title>
+	<link rel="stylesheet" type="text/css" href="css/watch.css">
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;"><a href="index.html">
+			<img src="img/logo.jpg" alt="The Gadget Hub" width="200" height="150"></a></h1>
+		<div class="header">
+			<ul>
+				<li> <a href="index.html">Home</a></li>
+				<li> <a href="products.html">Products</a></li>
+				<li> <a href="blog.html">Blog</a></li>
+				<li> <a href="watch.html">Research</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</header>
+	<h1 style="text-align: center;margin-left: 680px; margin-top: 5px; position: absolute;">
+			<img src="img/applogo.png" alt="iPhone" height="115" width="115" align="center"></h1>
+	<div class="watch">
+		<div>
+		<img src="img/applewatch.png" class="images"></div>
+	
+	<script type="text/javascript">
+
+		index = 0;
+
+		show(index);
+
+		function show(n){
+			var imgs = document.getElementsByClassName('images');
+
+			if (n> imgs.length-1) {
+				index= 0;
+			}
+
+			if(n<0){
+				index= imgs.length - 1;
+			} 
+
+			for (var i = 0; i <= imgs.length-1; i++) {
+				imgs[i].style.display="none";
+			}
+
+			imgs[index].style.display="block";
+		}
+
+
+		function automatic(){
+			index++;
+			show(index);
+			setTimeout(automatic, 1000);
+		}
+
+		automatic();
+
+		function change(n){
+			index+= n;
+			show(index);
+		}
+	</script>
+</div>
+	<table id="t01">
+	  <tr>
+	    <th>Specifications</th>
+	    <th></th> 
+	  </tr>
+	  <tr>
+	    <td width="30%">Brand</td>
+	    <td>Apple</td>
+	  </tr>
+	  <tr>
+	    <td>OS</td>
+	    <td>WatchOS 7
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Display</td>
+	    <td>1.78" Oled Touchscreen</td>
+	  </tr>
+	  <tr>
+	    <td>Resolution</td>
+	    <td>448x368 pixels resolution(326 ppi)
+	</td>
+	  </tr>
+	  <tr>
+	    <td>Storage	</td>
+	    <td>32 GB</td>
+	  </tr>
+	  <tr>
+	    <td>Battery capacity (mAh)	</td>
+	    <td>304</td>
+	  </tr>
+	</table>
+	<h1 style="text-align: center;margin-top: 10px;"><a href="contact.html">
+			<img src="img/buy.png" alt="Buy Now" height="150" width="150"></a></h1>
+<div class="footer">
+			<p>@ 2020 The Gadget Hub. All Rights Reserved</p>
+		</div>
+</body>
+</html>
+
+	
